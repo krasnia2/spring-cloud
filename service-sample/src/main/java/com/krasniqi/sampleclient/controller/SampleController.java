@@ -14,7 +14,7 @@ public class SampleController {
     private String instance;
 
     @GetMapping
-    public String message(@RequestHeader("x-location") String location) {
-        return "Hello from " + instance + " and location " + location;
+    public String message() {
+        return "Hello from " + instance ;
     }
 }
