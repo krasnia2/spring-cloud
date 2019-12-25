@@ -12,7 +12,6 @@ public class ConfigClientController {
     @Value("${some.property}")
     private String someProperty;
 
-
     @GetMapping
     public String ping(){
         return "Config client up. Injected property from config server: " + someProperty;
